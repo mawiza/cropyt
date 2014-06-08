@@ -1,0 +1,9 @@
+$("ul.errors").html("")
+<% if @photo.errors.any? %>
+  <% @photo.errors.full_messages.each do |message| %>
+    $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
+  <% end %>
+<% else %>	
+  $(".photo-index").html("<%= escape_javascript(render 'index') %>")
+  $("#photo-modal").modal("hide")
+<% end %>

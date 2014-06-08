@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop.yt</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <%= csrf_meta_tags %>
+  <script>var __adobewebfontsappname__ = "reflow"</script>
+  <script src="http://use.edgefonts.net/engagement:n4:all;nunito:n7,n4,n3:all;pacifico:n4:all.js"></script>  
+</head>
+<body>
+
+<div id="primaryContainer" class="primaryContainer clearfix">
+  <div id="main">
+    <nav class="navbar" style="border-radius:0px" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->        
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %> 
+            <% if controller_name == 'photos' && action_name == 'index'  %>
+              <li class="active"><%= link_to 'My images', photos_path %></li>
+            <% else %>
+              <li><%= link_to 'My images', photos_path %></li>
+            <% end %>
+          <% end %>
+          
+          <li>
+            <% if user_signed_in? %>  
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to "Sign in", new_session_path(resource_name) %>
+            <% end %>
+          </li>
+        </ul> 
+
+      </div>
+    </nav>        
+    <%= yield %>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<%= render 'edit_js' %>
+
+<%= form_for(@photo) do |f| %>
+  <table id="EditorToolsContainer">
+    <tr>
+      <td id="Editor">
+        <%= render 'editor', f: f  %>
+      </td>
+      <td id="Tools">      
+        <%= render 'tools', f: f  %>
+      </td>
+    </tr>
+  </table>
+<% end %>

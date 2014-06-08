@@ -1,0 +1,13 @@
+<div class="modal-dialog" style="width: 400px;">
+  <div class="modal-content" style="width: 400px;">
+    <div class="modal-header modal-error">
+      <h3>Error</h3>
+    </div>
+    <div class='modal-body'>
+      <%= escape_javascript flash[:error]%>  
+    </div>    
+    <div class="actions modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>                 
+  </div>
+</div>

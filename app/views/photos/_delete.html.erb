@@ -1,0 +1,15 @@
+<div class="modal-dialog" style="width: 400px;">
+	<div class="modal-content" style="width: 400px;">
+	  <div class="modal-header modal-warning">
+		  <h3>Delete Image</h3>
+		</div>
+		<div class="modal-body">
+			<ul class="errors"></ul>
+			Are you sure you wish to delete <b><%= @photo.image.file.filename %></b>?
+		</div>
+		<div class="modal-footer">
+		  <%= link_to "Yes, Delete This Image", @photo, method: :delete, remote: true, class: "btn btn-danger" %>
+		  <%= link_to "No, Please Don't", "#", class: "btn", data: { dismiss: "modal" } %>
+		</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

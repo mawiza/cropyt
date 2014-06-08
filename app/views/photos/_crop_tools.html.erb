@@ -1,0 +1,43 @@
+
+<div id="ratio-panel" class="panel panel-default ">
+	<div class="panel-heading">Ratio:</div>
+	<div class="panel-body">
+		<span class="pull-right">
+			<div id="aspect-ratio-dpn" class="btn-group">
+			  <button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown">
+			    Presets <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu nav nav-pills nav-stacked nav-pills-xs" style="padding-left:5px;padding-right:5px;" >
+			     <li><a id="aspect-ratio-1-1" >1:1</a></li>
+			     <li><a id="aspect-ratio-3-2" >3:2</a></li>
+			     <li><a id="aspect-ratio-4-3" >4:3</a></li>
+			     <li><a id="aspect-ratio-16-9" >16:9</a></li>
+			     <!--<li><button id="aspect-ratio-new" type="button" style="" class="btn btn-primary btn-block btn-xs">Add new</button></li>-->
+			  </ul>		  
+			</div>
+			<%= f.text_field  :ratio_width, size: '3', readonly: 'readonly' %>
+			<button id="swap-ar-btn" type="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-transfer"></span></button>
+			<%= f.text_field  :ratio_height, size: '3', readonly: 'readonly' %>
+			<button id="lock-ar-btn" type="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-lock"></span></button>
+			<button id="reset-ar-btn" type="button" class="btn btn-primary btn-xs">Reset</button>
+		</span>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">Size:</div>
+	<div class="panel-body">
+	<p>Crop Width <span class="pull-right"><%= f.text_field  :width, size: '3', readonly: 'readonly' %></span></p> 
+	<p>Crop Height <span class="pull-right"><%= f.text_field  :height, size: '3', readonly: 'readonly' %></span></p>
+	<p>Final Width <span class="pull-right"><%= f.text_field  :final_width, size: '3', readonly: 'readonly' %></span></p> 
+	<p>Final Height <span class="pull-right"><%= f.text_field  :final_height, size: '3', readonly: 'readonly' %></span></p>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">Coordinates</div>
+	<div class="panel-body">
+		<p>X1 <span class="pull-right"><%= f.text_field  :x1, size: '3', readonly: 'readonly' %></span></p>
+		<p>Y1 <span class="pull-right"><%= f.text_field  :y1, size: '3', readonly: 'readonly' %></span></p>
+		<p>X2 <span class="pull-right"><%= f.text_field  :x2, size: '3', readonly: 'readonly' %></span></p>
+		<p>Y2 <span class="pull-right"><%= f.text_field  :y2, size: '3', readonly: 'readonly' %></span></p>
+	</div>
+</div>

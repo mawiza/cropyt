@@ -1,0 +1,14 @@
+<div class="form-container">
+	<%= form_for resource, :as => resource_name, :url => registration_path(resource_name), :html => { class: 'form-signup', role: 'form' } do |f| %>
+		<%= devise_error_messages! %>
+		<h2 class="form-signup-heading">Sign up</h2>
+		<%= f.email_field :email, :autofocus => true, class: 'form-control', placeholder: "Email address" %>
+		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+		<%= f.password_field :password_confirmation, class: "form-control confirmation", placeholder: "Retype password" %>
+		<label class="checkbox">
+			<%= f.check_box :remember_me %> Remember me
+		</label>
+		<%= f.submit "Sign up", class: 'btn btn-lg btn-primary btn-block' %>
+	<% end %>
+</div>
+<%= render "devise/shared/links" %>

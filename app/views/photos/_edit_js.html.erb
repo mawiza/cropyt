@@ -1,0 +1,23 @@
+<script type="text/javascript">
+  
+  jQuery(function($){
+
+      //Propper abstraction
+      var opt = {
+        //Loading the already saved data      
+        initial_x1: <%= @photo.x1 ? @photo.x1 : 0 %>, //position x
+        initial_y1: <%= @photo.y1 ? @photo.y1 : 0 %>, //postiion y
+        initial_x2: <%= @photo.x2 ? @photo.x2 : 0 %>, //postion x1
+        initial_y2: <%= @photo.y2 ? @photo.y2 : 0 %>, //postion x2
+        initial_overlay_text: '<%= @photo.overlay_text %>',
+        overlay_position: 0,
+        overlay_height: 35,
+        overlay_font: 'arial,sans-serif',
+        overlay_font_size: 20,
+        overlay_text_alignment: 'center',
+        overlay_text_position: 'middle'
+      }
+
+      Crop(opt);
+    });  
+</script>

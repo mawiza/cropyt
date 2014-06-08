@@ -1,0 +1,223 @@
+<p id="notice"><%= notice %></p>
+
+<script type="text/javascript">
+
+  jQuery(function($){
+    var jcrop_api,    
+    boundx,
+    boundy,
+    $preview = $('#preview-pane'),
+    $pcnt = $('#preview-pane .preview-container'),
+    $pimg = $('#preview-pane .preview-container img'),
+    $poverlay = $('#preview-pane .preview-container .text-overlay'),
+    $poverlayText = $('#preview-pane .preview-container .text'),
+    xsize = <%= @photo.arX ? @photo.arX : 900 %>, //the width of the image - generally
+    ysize = <%= @photo.arY ? @photo.arY : 300 %>, //the height of the image - generally
+    initial_x1 = <%= @photo.x1 ? @photo.x1 : 0 %>, //position x
+    initial_y1 = <%= @photo.y1 ? @photo.y1 : 0 %>, //postiion y
+    initial_x2 = <%= @photo.x2 ? @photo.x2 : 900%>, //postion x1
+    initial_y2 = <%= @photo.y2 ? @photo.y2 : 300%>, //postion x2
+    initial_h = <%= @photo.h ? @photo.h : 900 %>, //the image width relative to the aspect ratio
+    initial_w = <%= @photo.w ? @photo.w : 300%>; //the image heigh relative to the aspect ratio
+    initial_overlay_text = '<%= @photo.overlay_text %>';
+
+    $('#target').Jcrop({
+      onChange:   update,
+      onSelect:   update,
+      onRelease:  clearCoords
+    },function(){      
+      jcrop_api = this;
+
+      jcrop_api.setSelect([initial_x1, initial_y1, initial_w, initial_h]);
+      updatePreviewPane(initial_x1, initial_y1, initial_w, initial_h);
+      $poverlayText.text($('#photo_overlay_text').val());
+      $("#photo_aspectRatio").val("<%= @photo.aspectRatio ? @photo.aspectRatio : 'Large' %>");
+
+      $pcnt.css({
+          width: xsize + 'px',
+          height: ysize + 'px'          
+      });
+
+      var bounds = this.getBounds();
+      boundx = bounds[0];
+      boundy = bounds[1];      
+
+      updateAspectRatio();
+    });
+
+    //The coordinates that we will use when we crop the image
+    $('#coords').on('change','input',function(e){
+      var x1 = $('#photo_x1').val(),
+          x2 = $('#photo_x2').val(),
+          y1 = $('#photo_y1').val(),
+          y2 = $('#photo_y2').val();     
+
+      jcrop_api.setSelect([x1,y1,x2,y2]);
+    });
+
+    //Setting the aspect ratio - there are 2 sizes
+    $("#photo_aspectRatio").change(function () {
+        updateAspectRatio();
+    });
+
+    $("#photo_overlay_text").on('change keyup paste', function() {
+      $poverlayText.text($('#photo_overlay_text').val());
+    });
+
+    //uypdate the aspect ratio
+    function updateAspectRatio()
+    {        
+        var text = $("#photo_aspectRatio").find(':selected').text();
+
+        if(text == "Large")
+        {
+          xsize = 900,
+          ysize = 300;          
+        }
+        else
+        {
+          xsize = 300,
+          ysize = 185;          
+        }
+
+        $('#photo_arX').val(xsize);
+        $('#photo_arY').val(ysize);
+
+        jcrop_api.setOptions({aspectRatio: xsize/ysize});
+        
+        //jcrop_api.setSelect([0,0,xsize,ysize]);          
+
+        $pcnt.css({
+          width: xsize + 'px',
+          height: ysize + 'px'
+        });
+    }
+
+    // Simple event handler, called from onChange and onSelect
+    // event handlers, as per the Jcrop invocation above
+    function update(c)
+    {
+      updateUI(c.x, c.y, c.x2, c.y2, c.w, c.h);      
+    };
+
+    //update the ui
+    function updateUI(x, y, x2, y2, w, h)
+    {
+      $('#photo_x1').val(x);
+      $('#photo_y1').val(y);
+      $('#photo_x2').val(x2);
+      $('#photo_y2').val(y2);
+      $('#photo_w').val(w);
+      $('#photo_h').val(h);      
+      
+      updatePreviewPane(x, y, w, h)
+    }
+
+    //update the preview pane
+    function updatePreviewPane(x, y, w, h)
+    {
+      if (parseInt(w) > 0)
+      {
+        var rx = xsize / w,
+        ry = ysize / h,
+        overlayHeight = 35;
+
+
+        $pimg.css({
+          width: Math.round(rx * boundx) + 'px',
+          height: Math.round(ry * boundy) + 'px',
+          marginLeft: '-' + Math.round(rx * x) + 'px',
+          marginTop: '-' + Math.round(ry * y) + 'px'
+        });
+
+        $poverlay.css({
+          width: xsize +'px',
+          height: overlayHeight + 'px',
+          'z-index': 1000,
+          position: 'absolute',          
+          opacity: 0.5,
+          'background-color': '#000',
+          marginTop: ysize - overlayHeight + 'px',
+          'text-align': 'center',          
+        });
+
+        $poverlayText.css({   
+          width: xsize +'px',
+          height: overlayHeight + 'px',
+          'z-index': 1000,
+          position: 'absolute',          
+          marginTop: ysize - overlayHeight + 'px',
+          'text-align': 'center',   
+          'padding-top' : '7px',
+          color: '#fff',
+          opacity: 1,
+          'z-index': 2000,
+          font: '20px bold arial,sans-serif'
+        });
+      }
+    }
+    
+    function clearCoords()
+    {
+      $('#coords input').val('');
+    };
+  });  
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<br />
+
+<%= form_for(@photo) do |f| %>
+  <div style="text-align:center;" class="inline-labels">    
+    <label>X1 <%= f.text_field :x1, size: '4' %></label>
+    <label>Y1 <%= f.text_field :y1, size: '4' %></label>
+    <label>X2 <%= f.text_field :x2, size: '4' %></label>
+    <label>Y2 <%= f.text_field :y2, size: '4' %></label>
+    <label>W <%= f.text_field :w, size: '4' %></label>
+    <label>H <%= f.text_field :h, size: '4' %></label>
+    <label>ARX <%= f.text_field :arX, size: '4' %></label>
+    <label>ARY <%= f.text_field :arY, size: '4' %></label>
+  </div>
+
+  <br />
+
+  <div id="main-pane">
+    <div class="main-container">
+      <img alt="" id="target" name="target" width="900px" src="<%= @photo.image %>">      
+    </div>
+  </div>
+   
+  <br />
+  <div style="text-align:center;" class="inline-labels">
+    <label>Aspect Ratio 
+      <%= f.select :aspectRatio, Photo::ASPECT_RATIOS %>      
+    </label>
+  </div> 
+
+  <br />
+
+  <div id="preview-pane">
+    <div class="preview-container">
+      <div class="text"></div>
+      <div class="text-overlay">        
+      </div>  
+      <img alt="" id="target" name="target" width="900px" src="<%= @photo.image %>">      
+    </div>
+  </div>
+  
+  <br />
+
+  <div style="text-align:center;" class="inline-labels">
+    <label>Text</label>
+    <%= f.text_area :overlay_text, cols: 100, rows: 4 %>    
+  </div>
+
+  <br />
+
+  <div style="text-align:center;">    
+    <%= button_to "Update and download", remote: true, form: { "data-type" => "json" } %>
+  </div>  
+<% end %>
+
+<%= link_to 'Photos', photos_path %>

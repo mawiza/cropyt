@@ -1,0 +1,52 @@
+<div id="overlay_tools">
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">Options:</div>
+		<div class="panel-body">
+			<div id="overlay_tools_state">
+				<p>Enable: <span class="pull-right"><%= f.check_box :overlay_enabled %></span></p>
+			</div>
+			<div id="overlay_tools_height">				
+				<p>Overlay height: <span class="pull-right"><%= f.text_field  :overlay_height, size: '3' %></span></p>
+			</div>
+			<div id="overlay_tools_position">
+				<p>Overlay position: <span class="pull-right"><%= f.text_field  :overlay_position, size: '3' %></span></p>
+			</div>			
+		</div>
+	</div>	
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Overlay Text:</div>
+		<div class="panel-body">
+			<div id="overlay_tools_text">
+				<%= f.text_area :overlay_text, class: "form-control" %>
+			</div>
+			<div id="overlay_tools_alignment">
+				<div id="text_alignment_btn_group" class="btn-group ">
+					<!-- <span class="pull-right"><%= f.text_field  :overlay_text_alignment, size: '3' %></span> -->
+			        <button id="left_text_alignment_btn" type="button" class="btn btn-primary btn-sm">
+			        	<span class="glyphicon glyphicon-align-left"></span>
+			        </button>
+			        <button id="center_text_alignment_btn" type="button" class="btn btn-primary btn-sm">
+			        	<span class="glyphicon glyphicon-align-center"></span>
+			        </button>
+			        <button id="right_text_alignment_btn" type="button" class="btn btn-primary btn-sm">
+			        	<span class="glyphicon glyphicon-align-right"></span>
+			        </button>
+			    </div>
+			    <div id="text_position_btn_group" class="btn-group ">
+			      <!-- <span class="pull-right"><%= f.text_field  :overlay_text_position, size: '3' %></span> -->
+				  <button id="top_text_position_btn" type="button" class="btn btn-primary btn-sm">Top</button>
+				  <button id="middle_text_position_btn" type="button" class="btn btn-primary btn-sm">Middle</button>
+				  <button id="bottom_text_position_btn" type="button" class="btn btn-primary btn-sm">Bottom</button>
+				</div>
+			</div>
+
+			<div id="overlay_tools_height">				
+				<p>Font Size: <span class="pull-right"><%= f.text_field  :overlay_text_size, size: '3' %></span></p>
+				<p>Font Family: <select id="google_font_selector" class="pull-right form-control bfh-googlefonts" data-filter="true" data-font="Lato"></select></p>
+				<!-- <span class="pull-right"><%= f.text_field  :overlay_text_font, size: '3' %></span> -->
+			</div>		
+		</div>
+	</div>
+</div>

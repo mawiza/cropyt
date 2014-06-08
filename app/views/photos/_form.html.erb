@@ -1,0 +1,47 @@
+<script type="text/javascript">
+  $(function() {
+      $('#photo_image').change(function() {
+       var fileName = $(this).val();
+       if(fileName != "") { $(".upload_button").prop('disabled', false); } 
+      });
+
+      $('#new_photo').fileupload();
+
+      $('#new_photo').bind('fileuploadprogress', function (e, data) {                    
+          var progress = parseInt(data.loaded / data.total * 100, 10);
+          console.log(progress);
+          $('.progress .progress-bar').css(
+              'width',
+              progress + '%'
+          );
+      });
+    });  
+</script>
+
+<div class="modal-dialog" style="width: 400px;">
+  <div class="modal-content" style="width: 400px;">
+    <div class="modal-header modal-info">
+      <h3>Upload image</h3>
+    </div>    
+
+      <%= form_for @photo, remote: true, :html => { class: 'form-upload', role: 'form' } do |f| %>
+        <div class='modal-body'>
+          <ul class="errors"></ul>
+          <div class="field" style="text-align:center;">
+            <div>
+              <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i><span class="fileinput-filename"></span></div>
+                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Uploading...</span><%= f.file_field :image %></span>
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="actions modal-footer">
+          <div class="progress">
+            <div class="progress-bar progress-bar-info"></div>
+          </div>        
+        </div>        
+      <% end %>      
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

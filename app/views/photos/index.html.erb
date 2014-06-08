@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="image-upload-btn-container">
+    <%= link_to 'Upload your image', new_photo_path, remote: true, class: 'btn btn-primary image-upload-btn' %>
+  </div>
+
+  <div class="row photo-index">
+    <%= render 'index' %>
+  </div>
+</div>
+<div id="photo-modal" class="modal fade"></div>

@@ -1,0 +1,6 @@
+<% if flash[:error] %>    
+    $("#photo-modal").html("<%= escape_javascript(render 'error') %>");    
+<% else %>
+	$("#photo-modal").html("<%= escape_javascript(render 'new') %>");
+<% end %>
+$("#photo-modal").modal("show")

@@ -1,0 +1,449 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  /*background-color: #373a3c;*/
+}
+
+.navbar {
+    background-color: #373a3c;
+}
+
+
+.jcrop-dark .jcrop-selection {
+    -moz-box-shadow: 0px 0px 15px #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+    box-shadow: 0px 0px 15px #000;
+}
+
+#main-pane .main-container {   
+  width: 900px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+#text-overlay { 
+  background-color:#000000; 
+}
+
+/*
+form.edit_photo label {
+  margin-right: 1em;
+  font-weight: bold;
+  color: #900;  
+}
+*/
+
+form.edit_photo label {
+    font-weight: normal;
+    color: #FDFDFD;
+    font-size: xx-small;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+form.edit_photo div.download input {
+  width: 13em;
+}
+
+
+form.edit_photo input {
+  padding-left: 5px;
+}
+
+
+form.edit_photo input {
+    width: 10em;
+    background-color: #333333;
+    color: rgb(117, 163, 212);
+    border-radius: 2px;
+    border-style: none;
+    text-align: center;
+}
+
+#photo_ratio_width {
+    width: 5em;
+}
+
+#photo_ratio_height {
+    width: 5em;
+}
+
+
+/*                              Photo Editor                            */
+/* -------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#Tools {
+    float: right;    
+    width: 380px;    
+    background-color: rgb(103, 103, 103);    
+    height: 100%;
+}
+
+#Editor {    
+    background-color: rgb(42, 42, 42);    
+    border: 2px none rgb(103, 103, 103);    
+    width: 100%;
+    height: 875px;
+}
+
+
+#EditorToolsContainer {
+    overflow: hidden;
+    height: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+
+
+#PreviewContainer {
+    float: left;
+    height: 195px;
+    margin-left: 3px;
+    margin-top: 3px;
+    clear: none;
+    width: 374px;
+    background-color: rgb(51, 51, 51);
+    border: 1px none rgb(132, 132, 132);
+}
+
+#preview-pane .preview-container {  
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+#CropTextOverlayTools {
+    height: 475px;
+    margin-left: 3px;
+    margin-top: 0px;
+    clear: both;
+    width: 374px;
+    background-color: rgb(69, 69, 69);
+    border-style: solid none none;
+    border-width: 1px;
+    border-color: rgb(40, 40, 40) rgb(132, 132, 132) rgb(132, 132, 132);
+}
+
+#Preview {
+    float: left;
+    height: 180px;
+    margin-left: 8.00000136px;
+    margin-top: 8px;
+    clear: none;
+    width: 358px;
+    border: 1px solid rgb(40, 40, 40);
+}
+
+#PreviewData {
+    float: left;
+    height: 45px;
+    margin-left: 8px;
+    margin-top: 8px;
+    clear: both;
+    width: 358px;
+    border: 1px solid rgb(40, 40, 40);
+}
+
+#LinksContainer {
+    float: right;
+    height: 34px;
+    margin-left: 0px;
+    margin-top: 8px;
+    clear: none;
+    width: 250px;
+    margin-right: 53px;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+
+
+#MyImages {
+    float: left;
+    font-size: 1.1em;
+    width: 125px;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    min-height: 34px;
+    color: rgb(255, 255, 255);
+    font-family: nunito;
+}
+
+#Logout {
+    float: left;
+    font-size: 1.1em;
+    width: 125px;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    min-height: 34px;
+    color: rgb(255, 255, 255);
+    font-family: nunito;
+}
+
+#DownloadButton {
+    float: left;
+    height: 30px;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 432px;
+    clear: none;
+    width: 170px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 56, 65);
+    border-style: none;
+    box-shadow: none;
+    font-family: nunito;
+    border-radius: 4px;
+    position: absolute;
+}
+
+#PreviewButton {
+    float: right;
+    height: 30px;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: 410px;
+    clear: none;
+    width: 170px;
+    color: rgb(255, 255, 255);
+    border-style: none;
+    box-shadow: none;
+    font-family: nunito;
+    background-color: rgb(49, 56, 65);
+    margin-right: 10px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+
+#overlay_tools {
+    margin: 5 px;
+}
+
+#overlay_tools_position {    
+    margin-bottom: 5px;
+}
+
+#overlay_tools_text{ 
+    margin-bottom: 5px;
+}
+
+#photo_overlay_text{
+    height: 112px;
+}
+#overlay_tools_alignment{  
+    margin-bottom: 5px;  
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    width: 75px;
+}
+
+.thumbnail-caption {
+    position:relative; 
+    height:170px
+}
+.thumbnail-btn {
+   margin-right: 15px;
+   margin-left: -15px;
+   margin-top: 15px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.image-upload-btn-container {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    float:none;
+    text-align:center;
+}
+
+.image-upload-btn {
+    
+}
+
+/*                              Resend upload                           */
+/* -------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    height: 30px;
+    font-size: 12px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    height: 30px;
+    font-size: 12px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    height: 30px;
+}
+
+.modal-body {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
+.progress {
+    margin-bottom: 0px;
+    margin-top: 10px;    
+}
+
+.modal-info {
+    background-color: #d9edf7;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.modal-error {
+    background-color: #f2dede; 
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;    
+}
+
+.modal-warning {
+    background-color: #fcf8e3;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;    
+}
+
+
+.modal-header h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px;
+}
+
+#crop{
+    padding: 20px;
+}
+
+#overlay{
+    padding: 20px;
+}
+
+#crop .panel-heading {
+padding: 1px 15px;
+}
+
+#crop .panel-body {
+padding: 5px;
+}
+
+#crop p {
+margin: 0 0 5px;
+}
+
+#overlay .panel-heading {
+padding: 1px 15px;
+}
+
+#overlay .panel-body {
+padding: 5px;
+}
+
+#overlay p {
+margin: 0 0 5px;
+}
+
+.ar-select-btn{
+    width:120px;     
+    border-bottom-width: 0px;
+    padding-bottom: 5px;
+}
+
+
+.bfh-googlefonts {
+    width: 140px;
+    font-size: 12px;
+    height: 25px;
+    padding: 0px 12px;    
+    display: inline;
+}
+
+.form-control {
+    padding: 1px 12px;
+}

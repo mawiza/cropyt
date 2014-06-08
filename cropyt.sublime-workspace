@@ -1,0 +1,921 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"to",
+				"toContain	toContain"
+			],
+			[
+				"defin",
+				"defined"
+			],
+			[
+				"on",
+				"onChange"
+			],
+			[
+				"ini",
+				"initial_x1"
+			],
+			[
+				"attr",
+				"attribute"
+			],
+			[
+				"over",
+				"overlay_text_position"
+			],
+			[
+				"ov",
+				"overlay_text_position"
+			],
+			[
+				"in",
+				"initial_overlay_text"
+			],
+			[
+				"atr",
+				"attribute"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"toB",
+				"toBeDefined	toBeDefined"
+			],
+			[
+				"be",
+				"beforeEach	beforeEach"
+			],
+			[
+				"text_",
+				"text_alignments"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"photo_ra",
+				"photo_ratio_height"
+			],
+			[
+				"aspe",
+				"aspect_ration_y"
+			],
+			[
+				"cs",
+				"cssHeight"
+			],
+			[
+				"dis",
+				"disableElement"
+			],
+			[
+				"clic",
+				"clicked"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"en",
+				"enable"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"jcrop",
+				"jcrop_api"
+			],
+			[
+				"c",
+				"click"
+			],
+			[
+				"ce",
+				"centerY"
+			],
+			[
+				"cer",
+				"centerY"
+			],
+			[
+				"b",
+				"boundy"
+			],
+			[
+				"bo",
+				"boundx"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"boun",
+				"boundy"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"ic",
+				"icHeight"
+			],
+			[
+				"bou",
+				"boundx"
+			],
+			[
+				"imageContainer",
+				"imageContainerWidth"
+			],
+			[
+				"ta",
+				"targerContainerHeight"
+			],
+			[
+				"tar",
+				"targerContainerWidth"
+			],
+			[
+				"ima",
+				"imageContainerHeight"
+			],
+			[
+				"image",
+				"image-container"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"p",
+				"progressbar"
+			],
+			[
+				"photo",
+				"photo_image"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"mA",
+				"margin-bottom"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"w",
+				"wRelative"
+			],
+			[
+				"y",
+				"y1Relative"
+			],
+			[
+				"x",
+				"x1Relative"
+			],
+			[
+				"ar",
+				"arY"
+			],
+			[
+				"a",
+				"arX"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"co",
+				"columns"
+			],
+			[
+				"r",
+				"rows"
+			],
+			[
+				"ra",
+				"ratio"
+			],
+			[
+				"dow",
+				"downcase"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"bound",
+				"boundx"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"lar",
+				"largeY"
+			],
+			[
+				"larg",
+				"largeX"
+			],
+			[
+				"sm",
+				"smallY"
+			],
+			[
+				"sma",
+				"smallX"
+			],
+			[
+				"st",
+				"style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/photos/_edit_js.html.erb",
+			"settings":
+			{
+				"buffer_size": 736,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/photos.js",
+			"settings":
+			{
+				"buffer_size": 20051,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/photos.css.scss",
+			"settings":
+			{
+				"buffer_size": 7944,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/photos/_overlay_tools.html.erb",
+			"settings":
+			{
+				"buffer_size": 2498,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/backbone/models/photo.coffee",
+			"settings":
+			{
+				"buffer_size": 580,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/javascripts/backbone/models/photo_spec.coffee",
+			"settings":
+			{
+				"buffer_size": 2539,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#= require backbone/cropyt\n\n# I have change events and click events\n# Some calls a function like lignment and position\n# where as the others gets the element and update the \n# global option to be used somewhere else\n# maybe I should create two different one for the \n#       text_alignments = ['left', 'center', 'middle'],\n#       text_positions = ['top', 'middle', 'bottom'],\n#       overlay_elements = {\n#           position:       'onChange', \n#           height:         'onChange', \n#           font:           'onChange', \n#           font_size:      'onChange', \n#           text_alignment: 'click', \n#           text_position:  'click'\n#         };\n\ndescribe 'A Photo model', ->\n	it 'should be defined', ->\n		expect(Cropyt.Models.Photo).toBeDefined()\n	beforeEach ->\n		this.photo = new Cropyt.Models.Photo\n\n	describe 'has a list of default attributes that', ->\n		it 'should contain a default value for attribute initial_x1', ->\n			expect(this.photo.get('initial_x1')).toEqual 0\n\n		it 'should contain a default value for attribute initial_y1', ->\n 	  		expect(this.photo.get('initial_y1')).toEqual 0\n\n 	  	it 'should contain a default value for attribute initial_x2', ->\n 	  		expect(this.photo.get('initial_x2')).toEqual 0\n\n 	  	it 'should contain a default value for attribute initial_y2', ->\n 	  		expect(this.photo.get('initial_y2')).toEqual 0\n	\n	describe 'has a list of events that', ->\n		it 'should have an onChange event specified', ->\n			expect(this.photo.get()).toBeDefined\n\n		xdescribe 'has a list of default onChange attributes that', ->\n	 	  	it 'should contain a default value for attribute initial_overlay_text', ->\n	 	  		expect(this.photo.get('onChange').get('initial_overlay_text')).toEqual 'Enter some text'\n\n	 	  	xit 'should contain a default value for attribute overlay_position', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_position')).toEqual 0\n\n	 	  	xit 'should contain a default value for attribute overlay_height', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_height')).toEqual 35\n\n	 	  	xit 'should contain a default value for attribute overlay_font', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_font')).toEqual 'arial,sans-serif'\n	 	  	  \n	 	  	xit 'should contain a default value for attribute overlay_font_size', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_font_size')).toEqual 20\n\n 	  	xit 'should contain a default value for attribute overlay_text_alignment', ->\n 	  		expect(this.photo.get('overlay_text_alignment')).toEqual 'center'\n\n 	  	xit 'should contain a default value for attribute overlay_text_position', ->\n 	  		expect(this.photo.get('overlay_text_position')).toEqual 'middle'\n\n 	#describe 'has on change events that', ->\n 	#	it 'should update the initial_x1 value', ->\n 	#		expect(this.photo.set('initial_x1')).toEqual 10 \n 		  \n 	\n",
+			"settings":
+			{
+				"buffer_size": 2835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "# path to parent directory of src_files\n# relative path from Rails.root\n# defaults to app/assets/javascripts\nsrc_dir: \"app/assets/javascripts\"\n\n# path to parent directory of css_files\n# relative path from Rails.root\n# defaults to app/assets/stylesheets\ncss_dir: \"app/assets/stylesheets\"\n\n# list of file expressions to include as source files\n# relative path from src_dir\nsrc_files:\n - \"application.{js.coffee,js,coffee}\"\n\n# list of file expressions to include as css files\n# relative path from css_dir\ncss_files:\n\n# path to parent directory of spec_files\n# relative path from Rails.root\n# defaults to spec/javascripts\nspec_files:\n  - \"**/*[Ss]pec.{js,coffee}\"\n\n# list of file expressions to include as helpers into spec runner\n# relative path from spec_dir\nhelpers:\n  - \"helpers/**/*.{js.coffee,js,coffee}\"\n\n# list of file expressions to include as specs into spec runner\n# relative path from spec_dir\nspec_files:\n  - \"**/*[Ss]pec.{js.coffee,js,coffee}\"\n\n# path to directory of temporary files\n# (spec runner and asset cache)\n# defaults to tmp/jasmine\ntmp_dir: \"tmp/jasmine\"\n",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"cof",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"coff",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"com",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"jasmi",
+				"Set Syntax: Jasmine CoffeeScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 277.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/c/users/stawm/appdata/local/temp/photo.js",
+		"/c/users/stawm/appdata/local/temp/photo_spec.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/application.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/support/jasmine.yml",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/Gemfile",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/Guardfile",
+		"/C/Ruby200/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.8.1/app/views/jasmine_rails/spec_runner/index.html.erb",
+		"/C/Ruby200/lib/ruby/gems/2.0.0/gems/jasmine-rails-0.8.1/app/views/layouts/jasmine_rails/spec_runner.html.erb",
+		"/c/users/stawm/appdata/local/temp/cropyt.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/backbone/models/photo_spec.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/photo.spec.coffee",
+		"/c/users/stawm/appdata/local/temp/photo.spec.js",
+		"/c/users/stawm/appdata/local/temp/photo.js.js",
+		"/C/Users/stawm/Google Drev/Projects/scala-triangle.txt",
+		"/C/Users/stawm/AppData/Roaming/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/C/Users/stawm/AppData/Roaming/Sublime Text 3/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/cropyt.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/config/routes.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_index.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/photos.css.scss",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_tools.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_overlay_tools.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_crop_tools.html.erb",
+		"/C/Users/stawm/Downloads/tapmodo-Jcrop-v0.9.12-4-gb28da86/tapmodo-Jcrop-b28da86/js/jquery.Jcrop.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/db/migrate/20140509092035_rename_columns_in_photo.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/layouts/application.html.erb",
+		"/C/Users/stawm/Downloads/winmarkltd-BootstrapFormHelpers-2.3.0-8-g0d89ab4/winmarkltd-BootstrapFormHelpers-0d89ab4/dist/js/bootstrap-formhelpers.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/db/migrate/20140505090223_add_text_overlay_tools_options_to_photo.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/jasny-bootstrap.min.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/edit.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_crop_overlay_tools.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_editor.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/application.css",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/controllers/photos_controller.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/bootstrap.css",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_form.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_delete.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_error.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/new.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/controllers/application_controller.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_save.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/create.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/models/photo.rb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/models/user.rb",
+		"/C/Users/stawm/Downloads/bootstrap-progressbar-master/bootstrap-progressbar-master/examples/bootstrap-3.1.0.html",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/delete.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/save.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/index.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/destroy.js.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_edit_js.html.erb",
+		"/C/Users/stawm/Desktop/photos.css",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/devise.css",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/devise/registrations/new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/devise/passwords/new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/devise/sessions/new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/devise/shared/_links.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/boilerplate.css",
+		"/C/Users/stawm/Google Drev/Projects/Cropyt-Design/assets/Page.css",
+		"/C/Users/stawm/Google Drev/Projects/Cropyt-Design/assets/Page.html",
+		"/C/Users/stawm/Google Drev/Projects/ImageEditor/assets/Page.css",
+		"/C/Users/stawm/Google Drev/Projects/ImageEditor/assets/Page.html",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/stylesheets/photos.css",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/_javascript.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/photos.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/views/photos/edit.html.erb_version_6",
+		"/C/Users/stawm/Google Drev/Projects/ImageEditor/assets/boilerplate.css",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/layouts/application.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/controllers/photos_controller.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/javascripts/photos.js.coffee",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/stylesheets/photos.css.scss",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/photos/_form.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/Gemfile",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/stylesheets/application.css",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/photos/edit.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/config/environments/production.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/config/environments/development.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/config/initializers/devise.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/photos/show.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/photos/index.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/views/photos/new.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/db/migrate/20140403114622_add_user_to_photos.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/uploaders/image_uploader.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/models/user.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/models/photo.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/db/migrate/20140402070953_add_relative_width_and_height_to_photo.rb",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/javascripts/photos.js",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/javascripts/photo.js",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/db/migrate/20140331063708_add_dimensions_to_photo.rb",
+		"/C/Users/stawm/Downloads/tapmodo-Jcrop-v0.9.12-4-gb28da86/tapmodo-Jcrop-b28da86/demos/tutorial3.html",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/config/routes.rb",
+		"/C/Users/stawm/Downloads/tapmodo-Jcrop-v0.9.12-4-gb28da86/tapmodo-Jcrop-b28da86/demos/tutorial5.html",
+		"/C/Users/stawm/Google Drev/Projects/image-editor/app/assets/javascripts/application.js",
+		"/C/Users/stawm/Downloads/tapmodo-Jcrop-v0.9.12-4-gb28da86/tapmodo-Jcrop-b28da86/demos/tutorial2.html",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/assets/stylesheets/image_editor.css.scss",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/views/image_editor/crop.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/assets/stylesheets/application.css",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/controllers/uploads_controller.rb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/views/image_editor/index.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/views/layouts/application.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/controllers/image_editor_controller.rb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/views/uploads/edit.html.erb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/models/upload.rb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/db/migrate/20140324113529_create_uploads.rb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/config/routes.rb",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/assets/javascripts/application.js",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/Gemfile",
+		"/C/Users/stawm/Google Drev/Projects/skoleport-image-editor/app/views/uploads/index.html.erb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/migrate/20140305093821_create_chart_states.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/migrate/20140305093715_create_charts.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/migrate/20140305093758_create_chart_types.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/user.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/schema.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/tmp.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/assets/javascripts/application.js",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/views/layouts/application.html.erb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/chart_state.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/controllers/home_controller.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/db/migrate/20140227094209_devise_create_admins.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/test/models/chart_state_test.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/test/models/chart_type_test.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/chart_type.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/helpers/layout_helper.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/views/home/index.html.erb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/medicine.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/state.rb",
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/mood.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"428",
+			"Hello from Backbone",
+			"Welcome to Backbone",
+			"initial_y1",
+			"initial_x1",
+			"options",
+			"allowResize",
+			"clearCoords",
+			"photo_r",
+			"photo_rW",
+			"rW",
+			"overlayHeight ",
+			"class=\"clearfix\"",
+			"@photo",
+			"0",
+			"bound",
+			" \"",
+			"coords",
+			"#900",
+			"container"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"options.initial_y1",
+			"options.initial_x1",
+			"",
+			"photo"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/photos/_edit_js.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/javascripts/photos.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1315,
+								1315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3974.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/stylesheets/photos.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4756,
+								4756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/photos/_overlay_tools.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1942,
+								1942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/javascripts/backbone/models/photo.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "spec/javascripts/backbone/models/photo_spec.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jasmine CoffeeScript/Syntaxes/Jasmine CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2835,
+								2835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jasmine CoffeeScript/Syntaxes/Jasmine CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1075,
+								1075
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "cropyt.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 141.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

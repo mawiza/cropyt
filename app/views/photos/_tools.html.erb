@@ -1,0 +1,20 @@
+<div id="PreviewContainer" class="clearfix">
+    <div id="Preview" class="clearfix">
+      <div id="preview-pane">
+        <div class="preview-container">
+          <div id="overlay-container">
+            <div class="text"></div>            
+            <div class="text-overlay"></div>            
+          </div>            
+          <img alt="" id="target" name="target"  src="<%= @photo.image %>">      
+        </div>
+      </div>
+    </div>
+</div>
+<div id="CropTextOverlayTools" class="clearfix">
+  <div>
+    <%= button_to "Save and Download", {remote: true, form: { "data-type" => "json" }}, id: 'DownloadButton' %>
+  </div>
+  <%= render 'crop_overlay_tools', f: f  %>
+  
+</div>
