@@ -46,19 +46,6 @@ gem "jquery-fileupload-rails"
 
 gem 'google-webfonts-rails'
 
-gem "rails-backbone"
-
-group :development, :test do
-  gem 'jasmine'
-  gem 'jasmine-rails'
-  gem 'sinon-rails'
-  gem 'guard'
-  gem 'guard-jasmine'
-  gem 'guard-coffeescript'
-  gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
-
-end
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

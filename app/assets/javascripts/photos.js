@@ -2,13 +2,15 @@ var Crop = function(opt){
 
   console.log('============================Initiate======================================');
 
-  /***********************************************************************
-   **
-   **                   Global variable declerations
-   **
-   ***********************************************************************/
+    /***********************************************************************
+     **
+     **                   Global variable declerations
+     **
+     ***********************************************************************/
 
-   var defaults = {  
+    var defaults, options, text_alignments, text_positions, overlay_elements, jcrop_api, boundx, boundy, imageContainerWidth, imageContainerHeight, $pcnt, $pimg, $poverlay, $poverlayText;
+
+    defaults = {
         initial_x1: 0,
         initial_y1: 0,
         initial_x2: 0,
@@ -20,42 +22,26 @@ var Crop = function(opt){
         overlay_font_size: 20,
         overlay_text_alignment: 'center',
         overlay_text_position: 'middle'
-      },
-      options = $.extend({}, defaults),
+    };
 
-      //TODO Refactoring
-      /*
-        I have change events and click events
-        Some calls a function like lignment and position
-        where as the others gets the element and update the 
-        global option to be used somewhere else
-        maybe I should create two different one
-      */
-      text_alignments = ['left', 'center', 'middle'],
-      text_positions = ['top', 'middle', 'bottom'],
-      overlay_elements = {
-          position:       'onChange', 
-          height:         'onChange', 
-          font:           'onChange', 
-          font_size:      'onChange', 
-          text_alignment: 'click', 
-          text_position:  'click'
-        },
+    options = $.extend({}, defaults);
+    text_alignments = ['left', 'center', 'middle'];
+    text_positions = ['top', 'middle', 'bottom'];
+    overlay_elements = {
+        position: 'onChange',
+        height: 'onChange',
+        font: 'onChange',
+        font_size: 'onChange',
+        text_alignment: 'click',
+        text_position: 'click'
+    };
 
-      //JCrop 
-      jcrop_api,    
-      boundx,
-      boundy,
-
-      //Browser window size
-      imageContainerWidth = $(document).width() - $('#Tools').width(),
-      imageContainerHeight = $(window).height() - $('.container-fluid').height() - $('#footer').height() - 2,
-
-      //Previewpane elements
-      $pcnt = $('#preview-pane .preview-container'),
-      $pimg = $('#preview-pane .preview-container img'),
-      $poverlay = $('#preview-pane .preview-container .text-overlay'),
-      $poverlayText = $('#preview-pane .preview-container .text');
+    imageContainerWidth = $(document).width() - $('#Tools').width();
+    imageContainerHeight = $(window).height() - $('.container-fluid').height() - $('#footer').height() - 2;
+    $pcnt = $('#preview-pane').find('.preview-container');
+    $pimg = $('#preview-pane').find('.preview-container img');
+    $poverlay = $('#preview-pane').find('.preview-container .text-overlay');
+    $poverlayText = $('#preview-pane').find('.preview-container .text');
 
   /***********************************************************************
    **
@@ -138,17 +124,17 @@ var Crop = function(opt){
       options.initial_y1 = boundy / 4;
       options.initial_y2 = boundy / 2 + options.initial_y1;          
 
-      console.log('Updatet initial_x1: ' + options.initial_x1);           
-      console.log('Updatet initial_x2: ' + options.initial_x2);     
-      console.log('Updatet initial_y1: ' + options.initial_y1);          
-      console.log('Updatet initial_y2: ' + options.initial_y2);
+      console.log('Updated initial_x1: ' + options.initial_x1);
+      console.log('Updated initial_x2: ' + options.initial_x2);
+      console.log('Updated initial_y1: ' + options.initial_y1);
+      console.log('Updated initial_y2: ' + options.initial_y2);
     }        
 
     jcrop_api.setSelect([options.initial_x1, options.initial_y1, options.initial_x2, options.initial_y2]);
   };
 
   /**
-   * The image should not fill more than 80% of the editor space.
+   * TODO:  The image should not fill more than 80% of the editor space.
    *
    */
   var centerTargetImage = function()
@@ -315,7 +301,7 @@ var Crop = function(opt){
    */
   var clearCoords = function()
   {
-    $('#coords input').val('');
+    $('#coords').find('input').val('');
   };
 
   /**
@@ -427,7 +413,7 @@ var Crop = function(opt){
         'opacity': 0.5,
         'background-color': '#000',
         'marginTop': height - cssHeight  - options.overlay_position + 'px',
-        'text-align': 'center',          
+        'text-align': 'center'
       });
 
       //TODO
@@ -472,7 +458,7 @@ var Crop = function(opt){
   //resize the image container so that it fills the whole window - minus the header and footer and the sidebar(tools).
   //Setting the container heights using the window size
   if(imageContainerHeight < 660)
-    imageContainerHeight = 660;       
+    imageContainerHeight = 660;
   $('#Editor').css('height', imageContainerHeight);
   $('#Tools').css('height', imageContainerHeight);
   $('#Editor').css('width', imageContainerWidth);
@@ -536,19 +522,19 @@ var Crop = function(opt){
 
   //TODO 
   //This can be refactored into a single function call
-  $("#photo_overlay_height").change(function(e){
+  $("#photo_overlay_height").change(function(){
     options.overlay_height = $("#photo_overlay_height").val();
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
-  $('#photo_overlay_position').change(function(e){
+  $('#photo_overlay_position').change(function(){
     options.overlay_position = $("#photo_overlay_position").val();
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
-  $('#google_font_selector').change(function(e){
+  $('#google_font_selector').change(function(){
     options.overlay_font = $("#google_font_selector").val();
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
-  $('#photo_overlay_text_size').change(function(e){
+  $('#photo_overlay_text_size').change(function(){
     options.overlay_font_size = $("#photo_overlay_text_size").val();
     jcrop_api.enable(); //calling this to update the jcrop interface
   });      
@@ -569,15 +555,15 @@ var Crop = function(opt){
    * Text alignment event handling
    *
    */
-  $('#left_text_alignment_btn').click(function(e) {
+  $('#left_text_alignment_btn').click(function() {
     toggleAlignmentButtons('left');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });      
-  $('#center_text_alignment_btn').click(function(e) {
+  $('#center_text_alignment_btn').click(function() {
     toggleAlignmentButtons('center');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
-  $('#right_text_alignment_btn').click(function(e) {
+  $('#right_text_alignment_btn').click(function() {
     toggleAlignmentButtons('right');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
@@ -586,15 +572,15 @@ var Crop = function(opt){
    * Text positioning event handling
    *
    */
-  $('#top_text_position_btn').click(function(e) {
+  $('#top_text_position_btn').click(function() {
     togglePositionButtons('top');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });      
-  $('#middle_text_position_btn').click(function(e) {
+  $('#middle_text_position_btn').click(function() {
     togglePositionButtons('middle');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
-  $('#bottom_text_position_btn').click(function(e) {
+  $('#bottom_text_position_btn').click(function() {
     togglePositionButtons('bottom');
     jcrop_api.enable(); //calling this to update the jcrop interface
   });
@@ -603,16 +589,16 @@ var Crop = function(opt){
    * Setting the aspect ratio using presets
    *
    */
-  $('#aspect-ratio-1-1').click(function(e) {               
+  $('#aspect-ratio-1-1').click(function() {
     setAspectRatio(1, 1);
   });
-  $('#aspect-ratio-3-2').click(function(e) {    
+  $('#aspect-ratio-3-2').click(function() {
     setAspectRatio(3, 2);        
   });
-  $('#aspect-ratio-4-3').click(function(e) {    
+  $('#aspect-ratio-4-3').click(function() {
     setAspectRatio(4, 3);        
   });
-  $('#aspect-ratio-16-9').click(function(e) {    
+  $('#aspect-ratio-16-9').click(function() {
     setAspectRatio(16, 9);        
   });
 
@@ -620,12 +606,12 @@ var Crop = function(opt){
    * Enable or disable the crop functionality, depending on the selected tab.
    *
    */
-  $('#crop_overlay_tools_tab a[href="#overlay"]').click(function(e){
+  $('#crop_overlay_tools_tab').find('a[href="#overlay"]').click(function(e){
     console.log("Disable");
     //jcrop_api.disable();
   });
 
-  $('#crop_overlay_tools_tab a[href="#crop"]').click(function(e){
+  $('#crop_overlay_tools_tab').find('a[href="#crop"]').click(function(e){
     console.log("Enable");
     //jcrop_api.enable();
   });
@@ -634,7 +620,7 @@ var Crop = function(opt){
    * Enable or disable the overlay
    *
    */
-   $("#photo_overlay_enabled").change(function(e){
+   $("#photo_overlay_enabled").change(function(){
     console.log("photo_overlay_enabled event fired");
     if($("#photo_overlay_enabled").is( ':checked' ))
     {
@@ -652,13 +638,13 @@ var Crop = function(opt){
    * Reset lock or swap the aspect ratio to the defaults
    *
    */
-  $('#reset-ar-btn').click(function(e) {
+  $('#reset-ar-btn').click(function() {
     resetAspectRatio();
   });
-  $('#lock-ar-btn').click(function(e) {
+  $('#lock-ar-btn').click(function() {
     lockAspectRatio();
   });
-  $('#swap-ar-btn').click(function(e) {
+  $('#swap-ar-btn').click(function() {
     swapAspectRatio();
   });
 };

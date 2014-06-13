@@ -14,11 +14,6 @@
 //= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
-//= require underscore
-//= require backbone
-//= require backbone_rails_sync
-//= require backbone_datalink
-//= require backbone/cropyt
 //= require_tree .
 //= require jquery.Jcrop
 //= require jquery.remotipart

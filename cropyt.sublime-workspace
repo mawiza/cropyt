@@ -291,7 +291,7 @@
 			"file": "app/views/photos/_edit_js.html.erb",
 			"settings":
 			{
-				"buffer_size": 736,
+				"buffer_size": 707,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,7 +299,7 @@
 			"file": "app/assets/javascripts/photos.js",
 			"settings":
 			{
-				"buffer_size": 20051,
+				"buffer_size": 20053,
 				"line_ending": "Windows"
 			}
 		},
@@ -316,38 +316,6 @@
 			"settings":
 			{
 				"buffer_size": 2498,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/assets/javascripts/backbone/models/photo.coffee",
-			"settings":
-			{
-				"buffer_size": 580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/javascripts/backbone/models/photo_spec.coffee",
-			"settings":
-			{
-				"buffer_size": 2539,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "#= require backbone/cropyt\n\n# I have change events and click events\n# Some calls a function like lignment and position\n# where as the others gets the element and update the \n# global option to be used somewhere else\n# maybe I should create two different one for the \n#       text_alignments = ['left', 'center', 'middle'],\n#       text_positions = ['top', 'middle', 'bottom'],\n#       overlay_elements = {\n#           position:       'onChange', \n#           height:         'onChange', \n#           font:           'onChange', \n#           font_size:      'onChange', \n#           text_alignment: 'click', \n#           text_position:  'click'\n#         };\n\ndescribe 'A Photo model', ->\n	it 'should be defined', ->\n		expect(Cropyt.Models.Photo).toBeDefined()\n	beforeEach ->\n		this.photo = new Cropyt.Models.Photo\n\n	describe 'has a list of default attributes that', ->\n		it 'should contain a default value for attribute initial_x1', ->\n			expect(this.photo.get('initial_x1')).toEqual 0\n\n		it 'should contain a default value for attribute initial_y1', ->\n 	  		expect(this.photo.get('initial_y1')).toEqual 0\n\n 	  	it 'should contain a default value for attribute initial_x2', ->\n 	  		expect(this.photo.get('initial_x2')).toEqual 0\n\n 	  	it 'should contain a default value for attribute initial_y2', ->\n 	  		expect(this.photo.get('initial_y2')).toEqual 0\n	\n	describe 'has a list of events that', ->\n		it 'should have an onChange event specified', ->\n			expect(this.photo.get()).toBeDefined\n\n		xdescribe 'has a list of default onChange attributes that', ->\n	 	  	it 'should contain a default value for attribute initial_overlay_text', ->\n	 	  		expect(this.photo.get('onChange').get('initial_overlay_text')).toEqual 'Enter some text'\n\n	 	  	xit 'should contain a default value for attribute overlay_position', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_position')).toEqual 0\n\n	 	  	xit 'should contain a default value for attribute overlay_height', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_height')).toEqual 35\n\n	 	  	xit 'should contain a default value for attribute overlay_font', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_font')).toEqual 'arial,sans-serif'\n	 	  	  \n	 	  	xit 'should contain a default value for attribute overlay_font_size', ->\n	 	  		expect(this.photo.get('onChange').get('overlay_font_size')).toEqual 20\n\n 	  	xit 'should contain a default value for attribute overlay_text_alignment', ->\n 	  		expect(this.photo.get('overlay_text_alignment')).toEqual 'center'\n\n 	  	xit 'should contain a default value for attribute overlay_text_position', ->\n 	  		expect(this.photo.get('overlay_text_position')).toEqual 'middle'\n\n 	#describe 'has on change events that', ->\n 	#	it 'should update the initial_x1 value', ->\n 	#		expect(this.photo.set('initial_x1')).toEqual 10 \n 		  \n 	\n",
-			"settings":
-			{
-				"buffer_size": 2835,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "# path to parent directory of src_files\n# relative path from Rails.root\n# defaults to app/assets/javascripts\nsrc_dir: \"app/assets/javascripts\"\n\n# path to parent directory of css_files\n# relative path from Rails.root\n# defaults to app/assets/stylesheets\ncss_dir: \"app/assets/stylesheets\"\n\n# list of file expressions to include as source files\n# relative path from src_dir\nsrc_files:\n - \"application.{js.coffee,js,coffee}\"\n\n# list of file expressions to include as css files\n# relative path from css_dir\ncss_files:\n\n# path to parent directory of spec_files\n# relative path from Rails.root\n# defaults to spec/javascripts\nspec_files:\n  - \"**/*[Ss]pec.{js,coffee}\"\n\n# list of file expressions to include as helpers into spec runner\n# relative path from spec_dir\nhelpers:\n  - \"helpers/**/*.{js.coffee,js,coffee}\"\n\n# list of file expressions to include as specs into spec runner\n# relative path from spec_dir\nspec_files:\n  - \"**/*[Ss]pec.{js.coffee,js,coffee}\"\n\n# path to directory of temporary files\n# (spec runner and asset cache)\n# defaults to tmp/jasmine\ntmp_dir: \"tmp/jasmine\"\n",
-			"settings":
-			{
-				"buffer_size": 1075,
 				"line_ending": "Windows"
 			}
 		}
@@ -412,9 +380,11 @@
 	},
 	"file_history":
 	[
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/application.js",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/backbone/models/photo.coffee",
+		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/backbone/models/photo_spec.coffee",
 		"/c/users/stawm/appdata/local/temp/photo.js",
 		"/c/users/stawm/appdata/local/temp/photo_spec.js",
-		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/application.js",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/support/jasmine.yml",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/Gemfile",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/Guardfile",
@@ -537,9 +507,7 @@
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/chart_type.rb",
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/helpers/layout_helper.rb",
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/views/home/index.html.erb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/medicine.rb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/state.rb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/mood.rb"
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/medicine.rb"
 	],
 	"find":
 	{
@@ -599,7 +567,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -608,15 +576,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 736,
+						"buffer_size": 707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								56,
+								56
 							]
 						],
 						"settings":
@@ -629,7 +597,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -638,15 +606,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20051,
+						"buffer_size": 20053,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1315,
-								1315
+								1180,
+								1196
 							]
 						],
 						"settings":
@@ -656,10 +624,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3974.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -689,7 +657,7 @@
 						"translation.y": 3105.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -718,120 +686,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/javascripts/backbone/models/photo.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								580,
-								580
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "spec/javascripts/backbone/models/photo_spec.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								871,
-								871
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jasmine CoffeeScript/Syntaxes/Jasmine CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2835,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2835,
-								2835
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jasmine CoffeeScript/Syntaxes/Jasmine CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1075,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1075,
-								1075
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -913,7 +768,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 141.0,
+	"side_bar_width": 356.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
