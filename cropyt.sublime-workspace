@@ -299,8 +299,26 @@
 			"file": "app/assets/javascripts/photos.js",
 			"settings":
 			{
-				"buffer_size": 20053,
+				"buffer_size": 19720,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/photos/_delete.html.erb",
+			"settings":
+			{
+				"buffer_size": 613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nBetter CoffeeScript:\n-------------------\n\n  # Better CoffeeScript changelog\n  \n  ```\n  IF YOU SEE THIS MESSAGE\n  Because you have updated the plugin,\n  you might need to restart Sublime Text\n  if the syntax highlighter stopped working.\n  ```\n  \n  ## Version 2.1\n  \n  ### May 2014 Log\n  * Have been doing little improvements with the help of community\n  * Pull requests are always welcome and appreciated.\n  * Looking for active maintainer, will give pointers for development!!!\n  \n  \n  \n  ## Version 2.0\n  \n  Version 2.0 is out!\n  \n  ### Log:\n  * New written Watch Mode.\n  * Line number tracking in Watch Mode.\n  * Toggle 2 columns when enabling Watch Mode.\n  * It is possible to compile with sourcemaps.\n  * Compile litcofee files.\n  * Auto-indent after `else\\n`.\n  * and other bugs fixes.\n  \n  \n  \n\n\nBetter CoffeeScript:\n-------------------\n\n  # Better CoffeeScript changelog\n  \n  ```\n  IF YOU SEE THIS MESSAGE\n  Because you have updated the plugin,\n  you might need to restart Sublime Text\n  if the syntax highlighter stopped working.\n  ```\n  \n  ## Version 2.1\n  \n  ### May 2014 Log\n  * Have been doing little improvements with the help of community\n  * Pull requests are always welcome and appreciated.\n  * Looking for active maintainer, will give pointers for development!!!\n  \n  \n  \n  ## Version 2.0\n  \n  Version 2.0 is out!\n  \n  ### Log:\n  * New written Watch Mode.\n  * Line number tracking in Watch Mode.\n  * Toggle 2 columns when enabling Watch Mode.\n  * It is possible to compile with sourcemaps.\n  * Compile litcofee files.\n  * Auto-indent after `else\\n`.\n  * and other bugs fixes.\n  \n  \n  \n",
+			"settings":
+			{
+				"buffer_size": 1653,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		},
 		{
@@ -380,6 +398,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/stawm/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/stawm/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/application.js",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/app/assets/javascripts/backbone/models/photo.coffee",
 		"/C/Users/stawm/Google Drev/Projects/cropyt/spec/javascripts/backbone/models/photo_spec.coffee",
@@ -505,9 +525,7 @@
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/test/models/chart_state_test.rb",
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/test/models/chart_type_test.rb",
 		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/chart_type.rb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/helpers/layout_helper.rb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/views/home/index.html.erb",
-		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/models/medicine.rb"
+		"/C/Users/stawm/Dump Truck/Projects/mooddiary/app/helpers/layout_helper.rb"
 	],
 	"find":
 	{
@@ -567,7 +585,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -597,7 +615,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -606,15 +624,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20053,
+						"buffer_size": 19720,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1180,
-								1196
+								0,
+								0
 							]
 						],
 						"settings":
@@ -627,11 +645,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "app/views/photos/_delete.html.erb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								613,
+								613
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								851
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "app/assets/stylesheets/photos.css.scss",
 					"semi_transient": false,
 					"settings":
@@ -657,11 +732,11 @@
 						"translation.y": 3105.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "app/views/photos/_overlay_tools.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -686,7 +761,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

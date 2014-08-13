@@ -3,3 +3,5 @@
 A Ruby on Rails app for editing images to a certain extend. 
 
 The main focus of the app is to provide cropping capabilies with the option of adding text overlays.  
+
+![alt tag](https://raw.github.com/username/projectname/branch/path/to/img.png)
