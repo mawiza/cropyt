@@ -30,4 +30,4 @@ Image cropping
 
 Text overlay
 
-![Screenshot7](/master/app/assets/images/page7.png)
+![Screenshot7](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page7.png)
