@@ -6,28 +6,28 @@ The main focus of the app is to provide cropping capabilies with the option of a
 
 Login
 
-![Screenshot1](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page1.png)
+[![Screenshot1](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page1.png)]
 
 Image list
 
-![Screenshot2](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page2.png)
+[![Screenshot2](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page2.png)]
 
 File deletion
 
-![Screenshot3](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page3.png)
+[![Screenshot3](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page3.png)]
 
 File selection
 
-![Screenshot4](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page4.png)
+[![Screenshot4](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page4.png)]
 
 File upload
 
-![Screenshot5](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page5.png)
+[![Screenshot5](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page5.png)]
 
 Image cropping
 
-![Screenshot6](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page6.png)
+[![Screenshot6](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page6.png)]
 
 Text overlay
 
-![Screenshot7](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page7.png)
+[![Screenshot7](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page7.png)]
