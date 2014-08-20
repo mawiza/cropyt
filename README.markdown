@@ -1,33 +1,34 @@
-== README
+##README
 
 A Ruby on Rails app for editing images to a certain extend. 
 
 The main focus of the app is to provide cropping capabilies with the option of adding text overlays.  
 
-Login
+##Login
 
 ![Screenshot1](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page1.png)
 
-Image list
+
+##Image list
 
 ![Screenshot2](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page2.png)
 
-File deletion
+
+##File deletion
 
 ![Screenshot3](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page3.png)
 
-File selection
 
-![Screenshot4](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page4.png)
-
-File upload
+##File upload
 
 ![Screenshot5](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page5.png)
 
-Image cropping
+
+##Image cropping
 
 ![Screenshot6](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page6.png)
 
-Text overlay
+
+##Text overlay
 
 ![Screenshot7](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page7.png)
