@@ -6,7 +6,7 @@ The main focus of the app is to provide cropping capabilies with the option of a
 
 Login
 
-![Screenshot1](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page1.png?raw=true)
+[Screenshot1](https://raw.githubusercontent.com/mawiza/cropyt/master/app/assets/images/page1.png)
 
 Image list
 
